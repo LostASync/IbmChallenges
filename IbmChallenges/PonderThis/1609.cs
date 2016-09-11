@@ -106,7 +106,7 @@ namespace IbmChallenges.PonderThis
                 .Zip(sequence.Skip(1), (x, y) =>
                     x.Zip(y, (a, b) => a == b).Count(i => i)
                 )
-                .Sum(i => i) * 2;
+                .Sum(i => i);
         }
     }
 }
